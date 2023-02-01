@@ -1,4 +1,5 @@
 #include "OJM.hpp"
+#include <cstring>
 
 namespace Nx
 {

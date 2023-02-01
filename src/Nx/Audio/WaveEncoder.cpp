@@ -1,4 +1,5 @@
 #include "WaveEncoder.hpp"
+#include <cstring>
 
 namespace Nx
 {

@@ -4,7 +4,7 @@
 #include <cstdio>
 #include <string>
 #include <fstream>
-#include <lame.h>
+#include <lame/lame.h>
 #include <sndfile.h>
 
 namespace Nx

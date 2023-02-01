@@ -3,10 +3,9 @@ Renders O2Jam OJN/OJM to MP3/WAV/OGG music file
 
 - **Author**: Yana Nugraha
 - **Author Homepage**: http://djzmo.com
-- **Latest Version**: 0.8.2
-
-**IMPORTANT:**
-This project is no longer maintained. Use at your own risk.
+- **Forked by**: XadillaX <https://xcoder.in>
+- **Forked by**: nekoprog <https://nekoprog.github.io>
+- **Latest Version**: 0.9.1
 
 --------------------------------------------------------------------------------------------------
 
@@ -29,6 +28,15 @@ See it in action: https://www.youtube.com/watch?v=snYnd_IvmbM
 
 ## Version History ##
 
+### v0.9.1
+Released: Jan 2023
+- Make it compilabled under Pop!_OS.
+- FMOD Ex API 4.44.64
+
+### v0.9.0
+Released: Nov 2015
+- Make it compilabled under OSX.
+
 ### v0.8.2
 Released: June 2012
 - Able to encode to OGG with automatic tagging.
@@ -41,6 +49,14 @@ Released: June 2012
 ### v0.8.0
 - Able to encode to MP3 with automatic ID3 tagging.
 - Keysounded notes might or might not be rendered properly in quick mode.
+
+## Compilation ##
+
+```
+$ sudo apt install libmp3lame-dev libtag1-dev libboost-all-dev libsndfile1-dev
+$ make
+$ make install
+```
 
 ## Usage ##
 

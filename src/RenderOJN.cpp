@@ -3,15 +3,16 @@
 #include <string>
 #include <boost/program_options.hpp>
 #include <boost/date_time/posix_time/posix_time.hpp>
-#include <tag.h>
-#include <xiphcomment.h>
-#include <fileref.h>
+#include <taglib/tag.h>
+#include <taglib/xiphcomment.h>
+#include <taglib/fileref.h>
 
 #include "Nx/IO.hpp"
 #include "Nx/Audio/WaveEncoder.hpp"
 #include "Nx/O2Jam/Music.hpp"
 #include "Nx/O2Jam/MusicRenderer.hpp"
-//#include "Nx/O2Jam/OJN.hpp"
+#include "Nx/O2Jam/OJM.hpp"
+#include "Nx/O2Jam/OJN.hpp"
 
 using namespace Nx::IO;
 using namespace Nx::O2Jam;
@@ -183,9 +184,11 @@ int main(int argc, char **argv)
 {
 	std::cout << "\n================================\n";
 	std::cout << "RenderOJN\n";
-	std::cout << "version 0.8 beta\n";
+	std::cout << "version 0.91 beta\n";
 	std::cout << "http://djzmo.com/p/RenderOJN\n";
 	std::cout << "(C) 2012 - DJZMO\n";
+	std::cout << " *  2015 Forked by XadillaX\n";
+	std::cout << " *  2023 Forked by nekoprog\n";
 	std::cout << "================================\n\n";
 
 	if(File::Exists("_render.tmp"))
@@ -427,7 +430,6 @@ int main(int argc, char **argv)
 		if(argc >= 2 && strcmp(argv[1], "--help") == 0)
 		{
 			std::cout << std::endl;
-			::system("pause");
 		}
 	}
 

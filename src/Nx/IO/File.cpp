@@ -1,4 +1,5 @@
 #include "File.hpp"
+#include <unistd.h>
 
 namespace Nx
 {
